@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Анна Ветошкина](https://up.htmlacademy.ru/htmlcss/26/user/1123603).
-* Наставник: `Неизвестно`.
+* Наставник: [Егор Дьяченко](https://htmlacademy.ru/profile/semperhomolupus)
 
 ---
 
