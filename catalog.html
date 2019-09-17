@@ -8,40 +8,41 @@
     <header>
       <div>
         <img src="img/tech-logo.svg" alt="Логотип Техномарт" width="109" height="19">
-      <p>  <input type="search" value="Поиск:"><p>
-
-      <ul>
-        <li>
-          <button type="button">Закладки: 0</button></li>
-        <li>
-          <button type="button">Корзина: 10</button>
+        <p><input type="search" value="Поиск:"></p>
+        <ul>
+          <li>
+            <button type="button">Закладки: 0</button></li>
+          <li>
+            <button type="button">Корзина: 10</button>
           </li>
-      </ul>
+        </ul>
         <ul>
           <li>
             <a href="">Оформить заказ</a>
           </li>
         </ul>
       </div>
+
       <div>
-      <div>
-        <p>Интернет-магазин<br>
-           строительных материалов<br>
-           и инструментов для ремонта
-         </p>
+        <div>
+          <p>Интернет-магазин<br>
+            строительных материалов<br>
+            и инструментов для ремонта
+          </p>
+        </div>
+        <div>
+          <p><span>+7 (812) 555-05-55</span><br>
+            <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
+        </div>
+        <div>
+          <p>Равшан Джамшутович</p>
+          <ul>
+            <li><a href="">Мои заказы</a></li>
+            <li><a href="">Личный кабинет</a></li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <p><span>+7 (812) 555-05-55</span><br>
-        <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
-      </div>
-      <div>
-        <div>Равшан Джамшутович</div>
-        <ul>
-          <li><a href="">Мои заказы</a></li>
-          <li><a href="">Личный кабинет</a></li>
-        </ul>
-      </div>
-    </div>
+
       <nav>
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -54,15 +55,18 @@
         </ul>
       </nav>
     </header>
+
     <main>
-      <h1>Каталог</h1>
+      <h1 class="visually-hidden">Каталог</h1>
       <ul>
         <li><a href="index.html"><img src="img/icon-home.svg" alt="Домашняя страница" width="14" height="12"></a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="">Инструмент</a></li>
         <li><a href="">Перфораторы</a></li>
       </ul>
+
       <h2>Перфораторы</h2>
+
       <div>
         <p>Фильтр:</p>
       </div>
@@ -74,32 +78,37 @@
           <li>По функционалу</li>
         </ul>
       </div>
+
       <section>
-        <h2>Фильтр товаров</h2>
-        <h3>Цена:</h3>
-        <div>
-          <!-- Сюда CSS добавить ползунок -->
-        </div>
-        <div><p>0</p></div>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <label for="price">Цена:</label>
+        <input type="range" id="price" name="price" min="0" max="30000">
+        <div>0</div>
         <p>—</p>
-        <div><p>30000</p></div>
-        <h3>Производители:</h3>
-        <ul>
-          <li>Bosch</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <h3>Питание</h3>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
+        <div>30000</div>
+
+        <fieldset>
+          <legend>Производители:</legend>
+            <ul>
+              <li><input type="checkbox" name="Bosch" checked>Bosch</li>
+              <li><input type="checkbox" name="Interskol">Интерскол</li>
+              <li><input type="checkbox" name="Makita" checked>Makita</li>
+              <li><input type="checkbox" name="Dewalt">Dewalt</li>
+              <li><input type="checkbox" name="Hitachi">Hitachi</li>
+            </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li><input type="radio" name="charge-group" value="battery-power" checked>Аккумуляторные</li>
+            <li><input type="radio" name="charge-group" value="mains-operated">Сетевые</li>
+          </ul>
+        </fieldset>
         <button type="button">Показать</button>
       </section>
+
       <section>
-        <h2>Карточки товаров</h2>
+        <h2 class="visually-hidden">Карточки товаров</h2>
         <ul>
           <li>
             <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -155,20 +164,21 @@
           </li>
         </ul>
       </section>
+
       <ul>
         <li>1</li>
         <li><a href="">2</a></li>
         <li><a href="">3</a></li>
         <li><a href="">Следующая</a></li>
       </ul>
+
       <article>
         <h2>Пара слов о перфораторах</h2>
-        <p>
-
-Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </article>
     </main>
+
     <footer>
       <section>
         <img src="img/tech-logo.svg" alt="Логотип Техномарт" width="138" height="23">
@@ -181,6 +191,7 @@
             <li><a href="">Контакты</a></li>
           </ul>
         </nav>
+
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
            +7 (812) 555-05-55
         </p>
@@ -191,37 +202,39 @@
           <li><a href="">Спецпредложения</a></li>
         </ul>
       </section>
+
       <section>
         <p>&#169;2010–2019 Компания «Техномарт»<br>
            Все права защищены
-         </p>
-         <ul>
-           <li>
-             <a href="vk.com"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a>
-           </li>
-           <li>
-             <a href="facebook.com"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"></a>
-           </li>
-           <li>
-             <a href="instagram.com"><img src="img/insta-icon.svg" alt="Instagram" width="21" height="21"></a>
-           </li>
-         </ul>
-         <p>Обратная связь:<br>
-           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-         </p>
-         <p>Разработано —<br>
-           <a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
+        </p>
+        <ul>
+          <li>
+            <a href="vk.com"><img src="img/vk-icon.svg" alt="Вконтакте" width="26" height="15"></a>
+          </li>
+          <li>
+            <a href="facebook.com"><img src="img/fb-icon.svg" alt="Facebook" width="12" height="22"></a>
+          </li>
+          <li>
+            <a href="instagram.com"><img src="img/insta-icon.svg" alt="Instagram" width="21" height="21"></a>
+          </li>
+        </ul>
+        <p>Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p>Разработано —<br>
+          <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+        </p>
       </section>
     </footer>
-    <form>
-      <div>
-        <p>Товар добавлен в корзину!</p>
-      </div>
+
+    <section>
+      <h2>Товар добавлен в корзину!</h2>
       <div>
         <button type="button" name="make-order">Оформить заказ</button>
         <button type="button" name="continue">Продолжить покупки</button>
       </div>
-      <button type="image" src="img/form-close.svg" alt="Закрыть форму">
-    </form>
+      <button type="button">Закрыть</button>
+    </section>
+
   </body>
 </html>
