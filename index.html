@@ -12,13 +12,20 @@
     <header class="header">
       <div class="top-menu">
         <div class="logo logo-header">
-          <img src="img/tech-logo.svg" alt="Логотип Техномарта" width="109" height="19px">
+          <a href="index.html">
+            <img src="img/tech-logo.svg" alt="Логотип Техномарта" width="109" height="19px">
+          </a>
         </div>
-        <label class="search" for="search">Поиск:</label>
-        <input class="search" type="text" id="search" name="search">
+        <div class="search">
+          <!-- <label for="search">Поиск:</label> -->
+          <input type="text" id="search" name="search" placeholder="Поиск:">
+        </div>
         <ul class="top-menu-list">
-          <li class="bookmarks"><a href="">Закладки: 0</a></li>
-          <li class="cart"><a href="">Корзина: 0</a></li>
+          <li class="bookmarks">
+            <a href="">Закладки: 0</a>
+          </li>
+          <li class="cart">
+              <a href="">Корзина: 0</a></li>
         </ul>
         <ul class="make-order">
           <li class="make-order-btn"><a href="">Оформить заказ</a></li>
@@ -33,7 +40,7 @@
           </p>
         </div>
         <div class="contacts-top">
-          <p><a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p><div class="tel"><a href="tel:+78125550555">+7 (812) 555-05-55</a></div>
             <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
         </div>
         <ul class="user-nav">
@@ -256,27 +263,27 @@
          </p>
 
          <ul class="socials">
-           <li class="vk">
-             <div class="socials-background">
+           <li>
+             <div class="socials-background vk">
                <a href="vk.com" aria-label="Вконтакте"></a>
              </div>
            </li>
-           <li class="fb">
-             <div class="socials-background">
+           <li>
+             <div class="socials-background fb">
                <a href="facebook.com" aria-label="Facebook"></a>
              </div>
            </li>
-           <li class="instagram">
-             <div class="socials-background">
+           <li>
+             <div class="socials-background instagram">
                <a href="instagram.com" aria-label="Instagram"></a>
              </div>
            </li>
          </ul>
 
-         <p>Обратная связь:<br>
+         <p class="copy">Обратная связь:<br>
            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
          </p>
-         <p>Разработано —<br>
+         <p class="copy">Разработано —<br>
            <a href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
       </div>
     </footer>
