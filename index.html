@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="top-menu">
-        <div class="logo">
+        <div class="logo logo-header">
           <img src="img/tech-logo.svg" alt="Логотип Техномарта" width="109" height="19px">
         </div>
         <label class="search" for="search">Поиск:</label>
@@ -36,7 +36,7 @@
           <p><a href="tel:+78125550555">+7 (812) 555-05-55</a>
             <span class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span></p>
         </div>
-        <ul class="account">
+        <ul class="user-nav">
           <li class="login"><a href="">Войти</a></li>
           <li class="register"><a href="">Регистрация</a></li>
         </ul>
@@ -74,7 +74,9 @@
           <li class="slider-item">
             <h2>Дрели</h2>
             <p>Соседям на радость!</p>
-            <a href="catalog.html">Открыть каталог</a>
+            <div class="button slider-btn">
+              <a href="catalog.html">Открыть каталог</a>
+            </div>
           </li>
           <li class="slider-item">
             <h2>Перфораторы</h2>
@@ -94,7 +96,9 @@
 
       <div class="section-heading">
         <h2>Популярные товары:</h2>
-        <a class="section-btn" href="">Все популярные товары</a>
+        <div class="button section-btn">
+          <a href="">Все популярные товары</a>
+        </div>
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -124,7 +128,9 @@
 
       <div class="section-heading">
         <h2>Популярные производители:</h2>
-        <a class="section-btn" href="">Все производители</a>
+        <div class="button section-btn">
+          <a href="">Все производители</a>
+        </div>
       </div>
       <ul class="producers-list">
         <li class="producers-item">
@@ -186,7 +192,9 @@
           <h3>Кредит</h3>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
           </p>
-          <a class="credit-btn" href="">Отправить заявку</a>
+          <div class="button credit-btn">
+            <a href="">Отправить заявку</a>
+          </div>
         </article>
       </section>
 
@@ -201,20 +209,22 @@
           <li class="shipping-item"><a href="https://autotrading.ru" target="_blank">Автотрейдинг</a></li>
           <li class="shipping-item"><a href="https://jde.ru" target="_blank">ЖелДорЭкспедиция</a></li>
         </ul>
-        <a class="about-company-btn" href="">Подробнее о компании</a>
+        <div class="button about-company-btn">
+          <a href="">Подробнее о компании</a>
+        </div>
       </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.jpg" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158">
-        <button type="button">Заблудились? Напишите нам!</button>
+        <button class="button contacts-btn" type="button">Заблудились? Напишите нам!</button>
       </section>
     </main>
 
-    <footer>
-      <section>
-        <div class="logo-footer">
+    <footer class="footer">
+      <section class="footer-top">
+        <div class="logo logo-footer">
           <img src="img/tech-logo.svg" alt="Логотип Техномарт" width="138" height="23">
         </div>
 
@@ -240,20 +250,26 @@
         </ul>
       </section>
 
-      <div class="copy">
-        <p>&#169;2010–2019 Компания «Техномарт»<br>
+      <div class="footer-bottom">
+        <p class="copy">&#169;2010–2019 Компания «Техномарт»<br>
            Все права защищены
          </p>
 
          <ul class="socials">
            <li class="vk">
-             <a href="vk.com" aria-label="Вконтакте"></a>
+             <div class="socials-background">
+               <a href="vk.com" aria-label="Вконтакте"></a>
+             </div>
            </li>
            <li class="fb">
-             <a href="facebook.com" aria-label="Facebook"></a>
+             <div class="socials-background">
+               <a href="facebook.com" aria-label="Facebook"></a>
+             </div>
            </li>
            <li class="instagram">
-             <a href="instagram.com" aria-label="Instagram"></a>
+             <div class="socials-background">
+               <a href="instagram.com" aria-label="Instagram"></a>
+             </div>
            </li>
          </ul>
 
