@@ -334,6 +334,14 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.main-boxes-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-boxes-btn:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .second-slide {
   display: none;
 }
