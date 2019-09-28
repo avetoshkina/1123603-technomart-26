@@ -1,3 +1,5 @@
+*, *:before, *:after { box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
@@ -33,17 +35,39 @@ a {
 }
 
 .header {
-  background-color: #f4f7f9
+  background-color: #f4f7f9;
+  min-height: 320px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0 auto; /*Центрует блок*/
 }
 
 .top-menu{
   background-color: #293449;
+  height: 42px;
+}
+
+.top-menu-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.header-middle {
+  display: flex;
+  height: 158px;
+  align-items: center;
 }
 
 .logo {
   width: 220px;
   height: 47px;
-  margin-left: 130px;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
@@ -51,6 +75,7 @@ a {
 .logo-header {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .logo-header:hover {
@@ -75,10 +100,16 @@ a {
 }
 
 .search input {
-  width: 270px;
+  /* width: 270px; */
   height: 42px;
+  margin-left: 17px;
+  padding-left: 32px;
   border: none;
   background: none;
+}
+
+::placeholder {
+  color: #ffffff;
 }
 
 .search input:hover {
@@ -130,6 +161,10 @@ a {
   background-color: #161d29;
 }
 
+.make-order {
+  margin: 0;
+}
+
 .make-order-btn {
   width: 150px;
   height: 42px;
@@ -148,6 +183,8 @@ a {
 }
 
 .about {
+  width: 250px;
+  padding-left: 53px;
   font-size: 16px;
   line-height: 24px;
   font-style: italic;
@@ -175,7 +212,16 @@ a {
   color: #ee3643;
 }
 
+.address {
+  display: block;
+  width: 276px;
+  margin: 0 auto;
+}
+
 .user-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 21px;
   text-align: center;
   line-height: 45px;
@@ -195,6 +241,7 @@ a {
 .register {
   width: 121px;
   height: 45px;
+  margin-left: 10px;
   background-color: #ffffff;
 }
 
@@ -209,11 +256,24 @@ a {
 }
 
 .main-nav {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 940px;
-  margin: 0 auto;
+  height: 60px;
+  margin: 0;
+  padding: 0;
   background-color: #32425c;
   box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.main-nav-list {
+  display: flex;
+  width: 833px;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
 }
 
 .main-nav li:hover {
@@ -231,6 +291,10 @@ a {
 
 .slider-btn:active {
   background-color: #ba2732
+}
+
+.services {
+  background-color: #f4f7f9;
 }
 
 .about-company h2,
@@ -281,6 +345,8 @@ a {
 .copy a:hover {
   text-decoration: underline;
 }
+
+
 
 .nav-footer-list li:active {
   color: rgba(241, 245, 247, 0.5);
