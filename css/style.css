@@ -310,7 +310,8 @@ a {
 .address {
   display: block;
   width: 276px;
-  margin: 0 auto;
+  margin: 0;
+  margin-top: 9px;
   padding-left: 10px;
 }
 
@@ -924,13 +925,50 @@ a {
 .footer-developer a:active {
   color: #ee3643;
 }
+
 /* Каталог */
+
+.account {
+  margin-top: 5px;
+}
+
 .user {
+  position: relative;
   width: 299px;
   height: 45px;
   line-height: 45px;
   text-align: center;
   background-color: #ffffff;
+}
+
+.user::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 18px;
+
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+
+.user::after {
+  content: "";
+
+  position: absolute;
+  top: 14px;
+  right: 10px;
+
+  width: 20px;
+  height: 17px;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .user a {
@@ -939,16 +977,25 @@ a {
 }
 
 .account-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  width: 250px;
+  margin: 0;
+  margin-top: 9px;
 }
 
-.dot {
+.account-list::before {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 130px;
+
   width: 5px;
   height: 5px;
   border-radius: 50%;
   background-color: #32425c;
-  text-align: center;
 }
 
 .account-item a {
@@ -973,9 +1020,34 @@ a {
 
 .breadcrumbs {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  margin-top: 25px;
   font-size: 13px;
   text-transform: uppercase;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 40px;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  left: -20px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  /* background-repeat: no-repeat; */
+}
+
+.breadcrumbs li:first-child::after {
+  display: none;
 }
 
 .breadcrumbs a {
@@ -1040,11 +1112,34 @@ a {
 }
 
 .sorting-list {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 354px;
+  margin-right: 100px;
   text-transform: uppercase;
   list-style: none;
+}
+
+.sorting-list::after {
+  content: "";
+
+  position: absolute;
+  /* top: 3px;
+  left: 400px;
+
+  width: 11px;
+  height: 10px; */
+
+  background-image:
+  url("../img/icon-up-dir.svg"),
+  url("../img/icon-down-dir.svg");
+  background-position:
+  top 3px left 400px,
+  top 3px left 420px;
+  background-size:
+  11px 10px,
+  11px 10px;
 }
 
 .filter {
