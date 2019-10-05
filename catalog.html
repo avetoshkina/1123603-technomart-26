@@ -108,24 +108,24 @@
         <fieldset class="producers-filter">
           <legend>Производители:</legend>
             <ul>
-              <li>
-                  <input class="visually-hidden" type="checkbox" id="bosch" name="bosch" checked>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="bosch" name="bosch" checked disabled>
                   <label for="bosch">Bosch</label>
               </li>
-              <li>
-                  <input class="visually-hidden" type="checkbox" id="interskol" name="interskol">
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="interskol" name="interskol">
                   <label for="interskol">Интерскол</label>
               </li>
-              <li>
-                  <input class="visually-hidden" type="checkbox" id="makita" name="makita" checked>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="makita" name="makita" checked>
                   <label for="makita">Makita</label>
               </li>
-              <li>
-                  <input class="visually-hidden" type="checkbox" id="dewalt" name="dewalt">
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="dewalt" name="dewalt">
                   <label for="dewalt">Dewalt</label>
               </li>
-              <li>
-                  <input class="visually-hidden" type="checkbox" id="hitachi" name="hitachi">
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" id="hitachi" name="hitachi">
                   <label for="hitachi">Hitachi</label>
               </li>
             </ul>
@@ -134,12 +134,12 @@
         <fieldset class="charge-filter">
           <legend>Питание:</legend>
           <ul>
-            <li>
-              <input class="visually-hidden" type="radio" id="battery" name="charge-group" value="battery-power" checked>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-radio" type="radio" id="battery" name="charge-group" value="battery-power" checked>
               <label for="battery">Аккумуляторные</label>
             </li>
-            <li>
-              <input class="visually-hidden" type="radio" id="mains" name="charge-group" value="mains-operated">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input-radio" type="radio" id="mains" name="charge-group" value="mains-operated">
               <label for="mains">Сетевые</label>
             </li>
           </ul>
@@ -151,10 +151,20 @@
         <div class="sorting">
           <p>Сортировка:</p>
           <ul class="sorting-list">
-            <li class="sorting-item current">По цене</li>
-            <li class="sorting-item">По типу</li>
-            <li class="sorting-item">По функционалу</li>
+            <li class="sorting-item current"><button type="button">По цене</button></li>
+            <li class="sorting-item"><button type="button">По типу</button></li>
+            <li class="sorting-item"><button type="button">По функционалу</button></li>
           </ul>
+          <button class="icon up" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 0L0 10h11z"/>
+            </svg>
+          </button>
+          <button class="icon down" type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                <path fill="#231F20" d="M5.5 10L0 0h11"/>
+            </svg>
+          </button>
         </div>
         <h2 class="visually-hidden">Карточки товаров</h2>
         <ul class="catalog-list">
