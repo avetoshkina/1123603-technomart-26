@@ -140,10 +140,16 @@ a {
 
 .search input:hover {
   background-color: #212a3a;
+  background-image: url("../img/icon-search-white.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px left 17px;
 }
 
 .search input:focus {
   background-color: #ffffff;
+  background-image: url("../img/icon-search-red.svg");
+  background-repeat: no-repeat;
+  background-position: top 14px left 17px;
   color: #000000;
 }
 
