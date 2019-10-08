@@ -769,14 +769,11 @@ a {
 }
 
 .services article {
+  position: relative;
   margin: 0;
   padding: 0;
   padding-left: 80px;
   padding-top: 46px;
-}
-
-.services-delivery {
-  position: relative;
 }
 
 .services-delivery::after {
@@ -793,9 +790,43 @@ a {
   background-repeat: no-repeat;
 }
 
-.services-guaranty,
-.services-credit {
+.services-guaranty::after {
+  content: "";
+
+  position: absolute;
+  left: 300px;
+  bottom: -100px;
+
+  width: 389px;
+  height: 283px;
+
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+}
+
+.services-credit::after {
+  content: "";
+
+  position: absolute;
+  left: 270px;
+  bottom: -100px;
+
+  width: 465px;
+  height: 285px;
+
+  background-image: url("../img/credit.png");
+  background-repeat: no-repeat;
+}
+
+.services-delivery,
+.services-guaranty{
+/* .services-credit { */
   display: none;
+}
+
+.credit-btn {
+  margin: 0;
+  margin-top:20px;
 }
 
 .pre-footer {
