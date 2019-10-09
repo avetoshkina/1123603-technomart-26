@@ -66,20 +66,20 @@
     <main>
       <div class="container">
       <h1 class="visually-hidden">Техномарт</h1>
-        <div class="main-catalog-boxes">
-          <div class="main-boxes materials new">
+        <ul class="main-catalog-boxes">
+          <li class="main-boxes materials new">
             <h2>Материалы</h2>
             <a href="" class="main-boxes-btn">На любой вкус</a>
-          </div>
-          <div class="main-boxes tools">
+          </li>
+          <li class="main-boxes tools">
             <h2>Инструмент</h2>
             <a href="" class="main-boxes-btn">На все случаи</a>
-          </div>
-          <div class="main-boxes equipment">
+          </li>
+          <li class="main-boxes equipment">
             <h2>Техника</h2>
             <a href="" class="main-boxes-btn">Для стройки</a>
-          </div>
-          <div class="slider">
+          </li>
+          <li class=" main-boxes slider">
             <ul class="slider-list">
               <li class="slider-item first-slide">
                 <h2>Дрели</h2>
@@ -96,16 +96,16 @@
                 </div>
               </li>
             </ul>
-          </div>
-          <div class="main-boxes discount">
+          </li>
+          <li class="main-boxes discount">
             <h2>Скидки 50%</h2>
             <a href="" class="main-boxes-btn">На 350 товаров</a>
-          </div>
-          <div class="main-boxes delivery">
+          </li>
+          <li class="main-boxes delivery">
             <h2>Доставка</h2>
             <a href="" class="main-boxes-btn">Бесплатно</a>
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="popular-items">
           <h2>Популярные товары:</h2>
           <div class="button section-btn">
@@ -348,24 +348,31 @@
     </div>
     </footer>
 
-    <section class="modal-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p><img src="img/map-big.jpg" alt="Адрес магазина: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446"></p>
-      <button class="close-btn" type="button">Закрыть</button>
+      <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
 
-    <section class="modal-feedback">
+    <section class="modal modal-feedback">
+      <div class="red-line"></div>
       <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form method="post">
-        <label for="name-field">Ваше имя:</label>
-        <p><input type="text" name="name" id="name-field" placeholder="Имя Фамилия"></p>
-        <label for="email-field">Ваш e-mail:</label>
-        <p><input type="email" name="email" id="email-field" placeholder="email@example.com"></p>
-        <label for="letter-field">Текст письма</label>
-        <p><textarea  name="letter" id="letter-field" rows="5">В свободной форме</textarea></p>
-        <button class="submit-btn" type="submit">Отправить</button>
-        <button class="close-btn" type="button">Закрыть</button>
+      <form class="contact-form" method="post">
+        <div class="name-input">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </div>
+        <div class="email-input">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        </div>
+        <label for="letter-field">Текст письма:</label>
+        <textarea  name="letter" id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
+        <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form>
+    <div class="gray-background">
+      <button class="modal-submit-btn" type="submit">Отправить</button>
+    </div>
   </section>
   </body>
 </html>
