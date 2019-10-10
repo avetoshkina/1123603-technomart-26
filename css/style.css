@@ -581,10 +581,6 @@ a {
   margin: 0;
 }
 
-.second-slide {
-  display: none;
-}
-
 .slider-item h2 {
   font-size: 36px;
   margin: 0;
@@ -603,9 +599,6 @@ a {
   margin: 0;
   padding-left: 24px;
   padding-top: 20px;
-  background-color: #000000;
-  background-image: url("../img/slider-image-1.jpg");
-  background-repeat: no-repeat;
   color: #ffffff;
 }
 
@@ -639,6 +632,26 @@ a {
   background-repeat: no-repeat;
 }
 
+.first-slide {
+  background-color: #000000;
+  background-image: url("../img/slider-image-1.jpg");
+  background-repeat: no-repeat;
+}
+
+.second-slide {
+  display: none;
+  background-color: #000000;
+  background-image: url("../img/slide-image-2.jpg");
+  background-repeat: no-repeat;
+}
+
+.slider-item:active::after .second-slide{
+  display: inline-block;
+}
+
+.slider-item:active::after .first-slide {
+  display: none;
+}
 
 .slider-item h2 {
   text-transform: uppercase;
@@ -765,6 +778,10 @@ a {
   line-height: 24px;
 }
 
+.services fieldset {
+  border: none
+}
+
 .services-list {
   position: relative;
   font-size: 21px;
@@ -785,7 +802,12 @@ a {
   background-repeat: no-repeat;
 }
 
-.service-item {
+.service-item input {
+  display: none;
+}
+
+.service-item input + label {
+  display: block;
   width: 240px;
   margin: 0;
   padding:0;
@@ -800,15 +822,25 @@ a {
   cursor: pointer;
 }
 
-.service-item:hover {
+.service-item label:hover {
   background-color: #293449;
 }
 
-.service-item:focus {
+.service-item input:checked + label {
   background-color: #ffffff;
   color: #32425c;
   box-shadow: none;
   outline: none;
+}
+
+.services-delivery,
+.services-guaranty,
+.services-credit {
+  display: none;
+}
+
+.delivery-item:checked + .services-delivery{
+  display: block;
 }
 
 .services article {
@@ -858,12 +890,6 @@ a {
 
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
-}
-
-/* .services-delivery, */
-.services-guaranty,
-.services-credit {
-  display: none;
 }
 
 .credit-btn {
