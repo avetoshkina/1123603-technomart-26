@@ -218,12 +218,23 @@
             <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
-        </div>
-          <ul class="services-list">
-            <li><button class="service-item delivery-item" type="button" autofocus>Доставка</button></li>
-            <li><button class="service-item guaranty-item" type="button">Гарантия</button></li>
-            <li><button class="service-item credit-item" type="button">Кредит</button></li>
-          </ul>
+          </div>
+          <fieldset>
+            <ul class="services-list">
+              <li class="service-item">
+                <input class="delivery-item" type="radio" id="delivery-checkbox" name="service" checked>
+                <label for="delivery-checkbox">Доставка</label>
+              </li>
+              <li class="service-item">
+                <input class="guaranty-item" type="radio" id="guaranty-checkbox" name="service">
+                <label for="guaranty-checkbox">Гарантия</label>
+              </li>
+              <li class="service-item">
+                <input class="credit-item" type="radio" id="credit-checkbox" name="service">
+                <label for="credit-checkbox">Кредит</label>
+              </li>
+            </ul>
+          </fieldset>
           <article class="services-delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо<br>
