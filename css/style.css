@@ -2016,7 +2016,7 @@ a {
 }
 
 .modal-feedback {
-  /* display: none; */
+  display: none;
   left: 50%;
   top: 50px;
 
@@ -2087,4 +2087,18 @@ a {
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal-map {
+  left: 50%;
+  top: 50px;
+  width: 940px;
+  height: 446px;
+  margin-left: -470px;
+  font-size: 0;
+}
+
+.modal-map img {
+  max-width: 100%;
 }
