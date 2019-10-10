@@ -2015,6 +2015,19 @@ a {
   cursor: pointer;
 }
 
+.modal-btn {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border: 0;
+  background-color: #ee3643;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .modal-feedback {
   display: none;
   left: 50%;
@@ -2079,18 +2092,10 @@ a {
 
 .modal-submit-btn {
   width: 100%;
-  padding: 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border: 0;
-  background-color: #ee3643;
-  font-size: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-  cursor: pointer;
 }
 
 .modal-map {
+  display: none;
   left: 50%;
   top: 50px;
   width: 940px;
@@ -2101,4 +2106,58 @@ a {
 
 .modal-map img {
   max-width: 100%;
+}
+
+.modal-in-cart {
+  display: none;
+  left: 50%;
+  top: 50px;
+  margin-left: -310px;
+}
+
+.modal-in-cart h2 {
+  position: relative;
+  margin: 0;
+  padding-left: 98px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.modal-in-cart .gray-background {
+  height: 112px;
+  margin-top: 68px;
+}
+
+.modal-in-cart h2::before {
+  content: "";
+
+  position: absolute;
+  top: -20px;
+  left: 0;
+
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/modal-check.svg");
+  background-repeat: no-repeat;
+}
+
+.modal-container {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.modal-grey-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-in-cart .modal-btn {
+  width: 220px;
+  text-align: center;
+}
+
+.modal-continue-purchase-btn {
+  background-color: #ffffff;
+  color: #000000;
 }
