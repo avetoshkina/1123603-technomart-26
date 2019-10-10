@@ -734,8 +734,8 @@ a {
 }
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
   padding-top: 65px;
   padding-bottom: 99px;
 }
@@ -774,7 +774,9 @@ a {
 }
 
 .services fieldset {
-  border: none
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .services-list {
@@ -788,8 +790,8 @@ a {
   content: "";
 
   position: absolute;
-  top: -46px;;
-  right: 0;
+  top: -46px;
+  left: 230px;
   width: 10px;
   height: 279px;
 
@@ -834,15 +836,19 @@ a {
   display: none;
 }
 
-.delivery-item:checked + .services-delivery{
+.service-item input:checked ~ label ~ article{
   display: block;
 }
 
 .services article {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
+  top: 0;
+  left: 330px;
+  width: 275px;
   margin: 0;
   padding: 0;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 .services-delivery::after {
