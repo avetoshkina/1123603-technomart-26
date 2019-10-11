@@ -1244,21 +1244,6 @@ a {
   opacity: 0.3;
 }
 
-/* .user::after {
-  content: "";
-
-  position: absolute;
-  top: 14px;
-  right: 10px;
-
-  width: 20px;
-  height: 17px;
-
-  background-image: url("../img/icon-logout.svg");
-  background-repeat: no-repeat;
-  opacity: 0.3;
-} */
-
 .user a {
   font-size: 21px;
   color: inherit;
@@ -1266,11 +1251,11 @@ a {
 
 .account-list {
   display: flex;
-  justify-content: center;
   width: 300px;
   margin: 0;
   margin-top: 9px;
   padding: 0;
+  padding-left: 17px;
 }
 
 .account-item {
@@ -1286,7 +1271,7 @@ a {
 
   position: absolute;
   top: 50%;
-  right: -20px;
+  right: -24px;
 
   width: 5px;
   height: 5px;
@@ -1326,6 +1311,8 @@ a {
   margin: 0;
   margin-top: 25px;
   font-size: 13px;
+  font-family: "PTSans", Arial, sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -1334,11 +1321,15 @@ a {
   margin-right: 40px;
 }
 
+.breadcrumbs li:nth-of-type(2) {
+
+}
+
 .breadcrumbs li::after {
   content: "";
 
   position: absolute;
-  left: -20px;
+  left: -25px;
 
   width: 8px;
   height: 12px;
@@ -1355,16 +1346,19 @@ a {
 }
 
 .catalog-title {
-  display: block;
   width: 940px;
-  height: 89px;
-  margin: 0 auto;
-  padding-left: 30px;
-  line-height: 89px;
+  /* height: 89px; */
+  margin: 0;
+  margin-top: 25px;
+  padding-left: 31px;
+  padding-top: 28px;
+  padding-bottom: 27px;
+  /* line-height: 89px; */
   background-color: #f2f6f8;
 }
 
 .catalog-title h2 {
+  margin: 0;
   font-size: 30px;
   color: #32425c;
   text-transform: uppercase;
@@ -1373,7 +1367,7 @@ a {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .filter-section {
@@ -1420,7 +1414,7 @@ a {
 }
 
 .filter-range-title {
-  margin-bottom: 21px;
+  margin-bottom: 18px;
   font-size: 17px;
   font-weight: 700;
   color: #000000;
@@ -1482,6 +1476,10 @@ a {
   padding: 0;
 }
 
+.price-controls input {
+  font-family: "PTSans", Arial, sans-serif;
+}
+
 .price-controls::after {
   content: "";
 
@@ -1519,7 +1517,7 @@ a {
 }
 
 .filter-section fieldset:last-of-type {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .filter-section ul {
@@ -1677,8 +1675,8 @@ a {
   margin-bottom: 20px;
   padding-left: 18px;
   padding-right: 18px;
-  padding-top: 12px;
-  padding-bottom: 11px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   background-color: #f7f3ec;
 
   font-family: "PTSans", Arial, sans-serif;
@@ -1696,7 +1694,8 @@ a {
   justify-content: space-between;
   width: 354px;
   margin: 0;
-  margin-right: 100px;
+  margin-left: 120px;
+  padding: 0;
   text-transform: uppercase;
   list-style: none;
 }
@@ -1725,9 +1724,15 @@ a {
 .icon {
   width: 11px;
   height: 10px;
+  margin-bottom: 10px;
+  padding: 0;
   background: none;
   border: none;
   outline: none;
+}
+
+.up {
+  margin-left: 31px;
 }
 
 .icon path {
@@ -1759,6 +1764,7 @@ a {
   list-style: none;
   width: 284px;
   margin: 0;
+  margin-top: 31px;
   padding: 0;
 }
 
@@ -1984,8 +1990,8 @@ a {
 .about-perforators-back {
   margin: 0;
   margin-top: 60px;
-  padding-top: 67px;
-  padding-bottom: 73px;
+  padding-top: 62px;
+  padding-bottom: 68px;
   background-color: #f4f7f9;
 }
 
