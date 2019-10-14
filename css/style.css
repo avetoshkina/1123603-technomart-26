@@ -1481,10 +1481,6 @@ a {
   padding: 0;
 }
 
-.price-controls input {
-  font-family: "PTSans", Arial, sans-serif;
-}
-
 .price-controls::after {
   content: "";
 
@@ -1502,11 +1498,10 @@ a {
   width: 95px;
   height: 38px;
   margin: 0;
-
   background-color: #f7f3ec;
   border: none;
   border-radius: 3px;
-
+  font-family: "PTSans", Arial, sans-serif;
   text-align: center;
 }
 
