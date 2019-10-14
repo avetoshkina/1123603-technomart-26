@@ -77,9 +77,11 @@ a {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  min-height: 158px;
+  /* min-height: 158px; */
   margin: 0;
-  align-items: center;
+  padding-top: 46px;
+  padding-bottom: 40px;
+  /* align-items: center; */
 }
 
 .logo {
@@ -267,7 +269,8 @@ a {
 
 .about {
   width: 250px;
-  margin-top: 28px;
+  margin: 0;
+  /* margin-top: 28px; */
   padding-left: 53px;
   font-size: 16px;
   line-height: 24px;
@@ -278,8 +281,9 @@ a {
 
 .contacts-top {
   width: 270px;
+  margin: 0;
   margin-left: 44px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   font-size: 14px;
   color: #32425c;
 }
@@ -325,7 +329,8 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 4px;
+  margin: 0;
+  /* margin-top: 4px; */
   font-size: 21px;
 }
 
@@ -1049,7 +1054,7 @@ a {
 .menu-footer {
   display: flex;
   justify-content: space-between;
-  width: 582px;
+  width: 524px;
   margin: 0;
   padding: 0;
 }
@@ -1301,7 +1306,7 @@ a {
 
 .orders a:active,
 .personal-account a:active {
-  color: color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .breadcrumbs {
