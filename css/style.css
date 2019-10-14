@@ -1301,7 +1301,7 @@ a {
 
 .orders a:active,
 .personal-account a:active {
-  color: color: rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
 }
 
 .breadcrumbs {
