@@ -648,8 +648,8 @@ a {
   cursor: pointer;
 }
 
-.slider-list button:active,
-.slider-list button:focus {
+.slider button:active,
+.slider button:focus {
   outline: none;
 }
 
@@ -2122,6 +2122,10 @@ a {
   height: 446px;
   margin-left: -470px;
   font-size: 0;
+}
+
+.modal-show {
+  display: block;
 }
 
 .modal-map img {
