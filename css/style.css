@@ -2073,6 +2073,11 @@ a {
   cursor: pointer;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  outline: none;
+}
+
 .modal-btn {
   padding-left: 10px;
   padding-right: 10px;
@@ -2151,6 +2156,10 @@ a {
   width: 100%;
 }
 
+.modal-submit-btn:focus {
+  background-color: black;
+}
+
 .modal-map {
   left: 50%;
   top: 50px;
@@ -2216,4 +2225,9 @@ a {
 .modal-continue-purchase-btn {
   background-color: #ffffff;
   color: #000000;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  outline: none;
 }
