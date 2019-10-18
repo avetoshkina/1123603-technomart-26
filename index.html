@@ -373,24 +373,26 @@
     </section>
 
     <section class="modal modal-feedback">
-      <div class="red-line"></div>
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="name-input">
-          <label for="name-field">Ваше имя:</label>
-          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        <div class="form-container">
+          <div class="name-input">
+            <label for="name-field">Ваше имя:</label>
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+          </div>
+          <div class="email-input">
+            <label for="email-field">Ваш e-mail:</label>
+            <input type="email" name="email" id="email-field" placeholder="email@example.com">
+          </div>
+          <label for="letter-field">Текст письма:</label>
+          <textarea  name="letter" id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
+          <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
         </div>
-        <div class="email-input">
-          <label for="email-field">Ваш e-mail:</label>
-          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        <div class="gray-background">
+          <button class="modal-btn modal-submit-btn" type="submit">Отправить</button>
         </div>
-        <label for="letter-field">Текст письма:</label>
-        <textarea  name="letter" id="letter-field" rows="6" placeholder="В свободной форме"></textarea>
-        <button class="modal-close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </form>
-    <div class="gray-background">
-      <button class="modal-btn modal-submit-btn" type="submit">Отправить</button>
-    </div>
+
   </section>
   <script src="js/contact-modal.js"></script>
   <script src="js/map-modal.js"></script>
