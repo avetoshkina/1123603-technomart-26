@@ -126,6 +126,7 @@ a {
   background-image: url("../img/icon-search.svg");
   background-repeat: no-repeat;
   background-position: top 14px left 17px;
+  transition: 0.3s;
 }
 
 .search ::placeholder {
@@ -137,6 +138,7 @@ a {
   background-image: url("../img/icon-search-white.svg");
   background-repeat: no-repeat;
   background-position: top 14px left 17px;
+  transition: 0.3s;
 }
 
 .search input:focus {
@@ -145,6 +147,7 @@ a {
   background-repeat: no-repeat;
   background-position: top 14px left 17px;
   color: #000000;
+  outline: none;
 }
 
 .top-menu-list,
@@ -176,7 +179,6 @@ a {
   height: 42px;
   margin: 0;
   padding-left: 44px;
-  /* padding-right: 28px; */
   padding-top: 12px;
   padding-bottom: 12px;
   color: #ffffff;
@@ -221,11 +223,13 @@ a {
 .bookmarks a:hover::before,
 .cart a:hover::before {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .bookmarks a:hover,
 .cart a:hover {
   background-color: #212a3a;
+  transition: 0.3s;
 }
 
 .bookmarks a:active::before,
@@ -237,10 +241,7 @@ a {
 .cart a:active {
   color: rgba(255, 255, 255, 0.6);
   background-color: #161d29;
-}
-
-.filled a {
-  background-color: #ee3643;
+  transition: 0.3s;
 }
 
 .make-order-btn {
@@ -260,11 +261,13 @@ a {
 
 .make-order-btn:hover {
   background-color: #5fbb2d;
+  transition: 0.3s;
 }
 
 .make-order-btn:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #518534;
+  transition: 0.3s;
 }
 
 .about {
@@ -330,7 +333,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin: 0;
-  /* margin-top: 4px; */
   font-size: 21px;
 }
 
@@ -341,7 +343,6 @@ a {
 .login a {
   position: relative;
   display: block;
-  /* height: 45px; */
   padding-left: 45px;
   padding-right: 25px;
   padding-top: 10px;
@@ -366,10 +367,12 @@ a {
 
 .login a:hover::before {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .login a:active::before {
   opacity: 0.3;
+  transition: 0.3s;
 }
 
 .register a {
@@ -386,11 +389,13 @@ a {
 .login a:hover,
 .register a:hover {
   color: #ee3643;
+  transition: 0.3s;
 }
 
 .login a:active,
 .register a:active {
   color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .main-nav {
@@ -420,11 +425,13 @@ a {
 
 .main-nav a:hover {
   background-color: #293449;
+  transition: 0.3s;
 }
 
 .main-nav a:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+  transition: 0.3s;
 }
 
 .main-catalog-boxes {
@@ -562,7 +569,6 @@ a {
 .main-boxes-btn {
   display: block;
   width: 135px;
-  /* height: 38px; */
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -575,10 +581,12 @@ a {
 
 .main-boxes-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 }
 
 .main-boxes-btn:active {
   background-color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .slider-list {
@@ -665,10 +673,12 @@ a {
 
 .slider-btn a:hover {
   background-color: #ca2c37;
+  transition: 0.3s;
 }
 
 .slider-btn a:active {
-  background-color: #ba2732
+  background-color: #ba2732;
+  transition: 0.3s;
 }
 
 .popular-items {
@@ -676,7 +686,6 @@ a {
   align-items: center;
   justify-content: space-between;
   width: 940px;
-  /* min-height: 89px; */
   padding-left: 28px;
   padding-right: 24px;
   padding-top: 26px;
@@ -729,11 +738,13 @@ a {
 
 .producers-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  transition: 0.3s;
 }
 
 .producers-item:active {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
+  transition: 0.3s;
 }
 
 .services-back {
@@ -741,8 +752,6 @@ a {
 }
 
 .services {
-  /* display: flex;
-  flex-wrap: wrap; */
   padding-top: 65px;
   padding-bottom: 99px;
 }
@@ -828,6 +837,7 @@ a {
 
 .service-item label:hover {
   background-color: #293449;
+  transition: 0.3s;
 }
 
 .service-item input:checked + label {
@@ -848,14 +858,12 @@ a {
 }
 
 .services article {
-  /* position: relative; */
   position: absolute;
   top: -6px;
   left: 320px;
   width: 275px;
   margin: 0;
   padding: 0;
-  /* padding-left: 80px; */
 }
 
 .services-guaranty p{
@@ -968,7 +976,6 @@ a {
   width: 25px;
   height: 2px;
   background-color: #ee3643;
-
 }
 
 .shipping-list a {
@@ -1043,6 +1050,7 @@ a {
 .menu-footer a:hover,
 .copy a:hover {
   text-decoration: underline;
+  transition: 0.3s;
 }
 
 .nav-footer-list {
@@ -1058,6 +1066,7 @@ a {
 
 .nav-footer-list a:active {
   color: rgba(241, 245, 247, 0.5);
+  transition: 0.3s;
 }
 
 .menu-footer {
@@ -1070,6 +1079,7 @@ a {
 
 .menu-footer a:active {
   color: rgba(255, 209, 128, 0.5);
+  transition: 0.3s;
 }
 
 .menu-footer a {
@@ -1078,7 +1088,6 @@ a {
 }
 
 .footer p {
-  /* width: 324px; */
   padding: 0;
   color: #ffffff;
 }
@@ -1106,7 +1115,6 @@ a {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  /* line-height: 22px; */
 }
 
 .socials {
@@ -1183,6 +1191,7 @@ a {
 .socials-background:hover,
 .socials-background:active {
   background-color: #ee3643;
+  transition: 0.3s;
 }
 
 .footer-contact {
@@ -1208,6 +1217,7 @@ a {
 .footer-contact a:active,
 .footer-developer a:active {
   color: #ee3643;
+  transition: 0.3s;
 }
 
 /* Каталог */
@@ -1259,11 +1269,13 @@ a {
 .user:hover::before,
 .user:hover .logout-btn {
   opacity: 1;
+  transition: 0.3s;
 }
 
 .user:active::before,
 .user:active .logout-btn {
   opacity: 0.1;
+  transition: 0.3s;
 }
 
 .user a {
@@ -1314,16 +1326,19 @@ a {
 
 .user a:active {
   color: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 
 .orders a:hover,
 .personal-account a:hover {
   color: #ee3643;
+  transition: 0.3s;
 }
 
 .orders a:active,
 .personal-account a:active {
   color: rgba(50, 66, 92, 0.3);
+  transition: 0.3s;
 }
 
 .breadcrumbs {
@@ -1369,13 +1384,11 @@ a {
 
 .catalog-title {
   width: 940px;
-  /* height: 89px; */
   margin: 0;
   margin-top: 25px;
   padding-left: 31px;
   padding-top: 28px;
   padding-bottom: 27px;
-  /* line-height: 89px; */
   background-color: #f2f6f8;
 }
 
@@ -1824,11 +1837,13 @@ a {
 .pagination-list a:hover,
 .next a:hover {
   border-color: #bdc6ca;
+  transition: 0.3s;
 }
 
 .pagination-list a:active,
 .next a:active {
   border-color: #ee3643;
+  transition: 0.3s;
 }
 
 .catalog-item img {
@@ -1876,6 +1891,7 @@ a {
 
 .catalog-item:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  transition: 0.3s;
 }
 
 .catalog-item:hover img {
@@ -1983,11 +1999,13 @@ a {
 
 .purchase-btn a:hover {
   background-color: #5fbb2d;
+  transition: 0.3s;
 }
 
 .purchase-btn a:active {
   background-color: #518534;
   box-shadow: none;
+  transition: 0.3s;
 }
 
 .bookmarks-btn a {
@@ -2010,11 +2028,13 @@ a {
 
 .bookmarks-btn a:hover {
   border: solid 3px #32425c;
+  transition: 0.3s;
 }
 
 .bookmarks-btn a:active {
   opacity: 0.3;
   border: solid 3px #32425c;
+  transition: 0.3s;
 }
 
 .about-perforators-back {
@@ -2182,20 +2202,18 @@ a {
 .contact-form input:hover,
 .contact-form textarea:hover {
   border-color: #b5b5b5;
+  transition: 0.3s;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #ee3643;
+  transition: 0.3s;
 }
 
 .modal-submit-btn {
   width: 100%;
-}
-
-.modal-submit-btn:focus {
-  background-color: black;
 }
 
 .modal-map {
