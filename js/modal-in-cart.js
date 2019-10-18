@@ -7,7 +7,8 @@ for(var i=0; i<purchaseLink.length; i++) {
   button = purchaseLink[i];
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.add("modal-show"); //вывод сообщений в консоль работает, а показ попапа нет
+    popup.classList.add("modal-show");
+    console.log('Клик купить'); //вывод сообщений в консоль работает, а показ попапа нет
   });
 }
 
