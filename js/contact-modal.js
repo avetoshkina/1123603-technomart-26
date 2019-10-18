@@ -22,54 +22,43 @@ var storageEmail = "";
     isStorageSupportEmail = false;
   };
 
-// Показывает попап по клику по кнопке "Заблудились? Напишите нам!" - работает
+// Показывает попап по клику по кнопке "Заблудились? Напишите нам!"
 contactBtn.addEventListener("click", function (evt){
   evt.preventDefault();
   contactModal.classList.add("modal-show");
 
-// проверяет наличие данных в localStorage - ФОКУСИРУЕТСЯ ТОЛЬКО НА ИМЕНИ ВСЕГДА
-  if (storageName && storageEmail) {
+// проверяет наличие данных в localStorage
+  if (storageName) {
     contactName.value = storageName;
-    email.value = storageEmail;
-    letter.focus(); //не работает
+    email.focus();
   } else {
-    if (storageName) {
-      contactName.value = storageName;
-      email.focus(); //не работает
-    } else {
-      if (storageEmail) {
-        email.value = storageEmail;
-        contactName.focus();
-      } else {
-        contactName.focus(); //работает
-      }
-      }}
+    contactName.focus();
+    }
 });
 
-// Закрывает попап при клике на кнопку закрытия (крестик) - работает
+// Закрывает попап при клике на кнопку закрытия (крестик)
 closeContactModal.addEventListener("click", function (evt) {
     evt.preventDefault();
     contactModal.classList.remove("modal-show");
     contactModal.classList.remove("modal-error");
   });
 
-// проверяет на заполнение полей Имя и Email - не работает
+// проверяет на заполнение полей Имя и Email
 contactForm.addEventListener("submit", function (evt) {
     if (!contactName.value || !email.value) {
       evt.preventDefault();
-      // contactModal.classList.remove("modal-error");
-      // contactModal.offsetWidth = contactModal.offsetWidth;
-      // contactModal.classList.add("modal-error");
-      console.log('Нужно ввести данные');
+      contactModal.classList.remove("modal-error");
+      contactModal.offsetWidth = contactModal.offsetWidth;
+      contactModal.classList.add("modal-error");
     }
-    // else {
-    //   if (isStorageSupportName) {
-    //     localStorage.setItem("contactName", contactName.value);
-    //   }
-    // }
+    else {
+      if (isStorageSupportName) {
+        localStorage.setItem("contactName", contactName.value);
+      }
+    }
   });
 
-// Закрывает форму по клавише esc - работает
+// Закрывает форму по клавише esc
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
