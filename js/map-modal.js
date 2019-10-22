@@ -5,12 +5,12 @@ var mapClose = mapModal.querySelector(".modal-close-btn");
 openMap.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapModal.classList.add("modal-show");
-  });
+});
 
 mapClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     mapModal.classList.remove("modal-show");
-  });
+});
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
@@ -19,4 +19,4 @@ window.addEventListener("keydown", function (evt) {
         mapModal.classList.remove("modal-show");
       }
     }
-  });
+});

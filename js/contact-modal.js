@@ -10,17 +10,17 @@ var isStorageSupportEmail = true;
 var storageName = "";
 var storageEmail = "";
 
-  try {
-    storageName = localStorage.getItem("contactName");
-  } catch (err) {
-    isStorageSupportName = false;
-  }
+try {
+  storageName = localStorage.getItem("contactName");
+} catch (err) {
+  isStorageSupportName = false;
+}
 
-  try {
-    storageEmail = localStorage.getItem("email");
-  } catch (err) {
-    isStorageSupportEmail = false;
-  };
+try {
+  storageEmail = localStorage.getItem("email");
+} catch (err) {
+  isStorageSupportEmail = false;
+};
 
 // Показывает попап по клику по кнопке "Заблудились? Напишите нам!"
 contactBtn.addEventListener("click", function (evt){
@@ -41,7 +41,7 @@ closeContactModal.addEventListener("click", function (evt) {
     evt.preventDefault();
     contactModal.classList.remove("modal-show");
     contactModal.classList.remove("modal-error");
-  });
+});
 
 // проверяет на заполнение полей Имя и Email
 contactForm.addEventListener("submit", function (evt) {
@@ -56,7 +56,7 @@ contactForm.addEventListener("submit", function (evt) {
         localStorage.setItem("contactName", contactName.value);
       }
     }
-  });
+});
 
 // Закрывает форму по клавише esc
 window.addEventListener("keydown", function (evt) {
@@ -67,4 +67,4 @@ window.addEventListener("keydown", function (evt) {
         contactModal.classList.remove("modal-error");
       }
     }
-  });
+});

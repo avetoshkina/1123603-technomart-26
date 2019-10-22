@@ -1,4 +1,6 @@
-*, *:before, *:after { box-sizing: border-box; }
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 body {
   min-width: 980px;
@@ -39,6 +41,14 @@ a {
   text-transform: uppercase;
   background-color: #ee3643;
   border-radius: 3px;
+}
+
+.button a:hover {
+  background-color: #ca2c37;
+}
+
+.button a:active {
+  background-color: #ba2732;
 }
 
 .header {
@@ -556,6 +566,10 @@ a {
   transition: 0.3s;
 }
 
+.slider {
+  position: relative;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -573,7 +587,6 @@ a {
 }
 
 .slider-item {
-  position: relative;
   width: 620px;
   height: 266px;
   margin: 0;
@@ -597,8 +610,8 @@ a {
 
 .btn-previous-slide {
   position: absolute;
-  top: 635px;
-  left: 230px;
+  top: 113px;
+  left: 24px;
   width: 22px;
   height: 40px;
   border: 0;
@@ -610,8 +623,8 @@ a {
 
 .btn-next-slide {
   position: absolute;
-  top: 635px;
-  right: 545px;
+  top: 113px;
+  right: 22px;
   width: 22px;
   height: 40px;
   border: 0;
@@ -665,7 +678,7 @@ a {
   font-size: 30px;
 }
 
-.popular-items .button a {
+.section-btn a {
   width: 253px;
 }
 
@@ -832,7 +845,7 @@ a {
   padding: 0;
 }
 
-.services-guaranty p{
+.services-guaranty p {
   width: 379px;
 }
 
@@ -944,6 +957,7 @@ a {
 }
 
 .contacts-btn {
+  display: block;
   width: 300px;
   height: 38px;
   padding-top: 12px;
@@ -958,9 +972,12 @@ a {
   cursor: pointer;
 }
 
-.contacts-btn:hover,
-.contacts-btn:focus {
-  outline: none;
+.contacts-btn:hover {
+  background-color: #ca2c37;
+}
+
+.contacts-btn:active {
+  background-color: #ba2732;
 }
 
 .footer {
@@ -1313,7 +1330,7 @@ a {
 .catalog-title {
   width: 940px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 19px;
   padding-left: 31px;
   padding-top: 28px;
   padding-bottom: 27px;
@@ -1330,7 +1347,7 @@ a {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .filter-section {
@@ -1359,7 +1376,7 @@ a {
   position: relative;
   width: 220px;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   padding: 0;
   font-family: "PTSans", Arial, sans-serif;
 }
@@ -1462,7 +1479,7 @@ a {
 
 .filter-section fieldset {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   padding: 0;
   border: none;
 }
